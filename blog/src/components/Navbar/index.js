@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./style.css";
+import { NavLink } from "react-router-dom";
 import Search from "../../assets/icons/search.png";
 
 /**
@@ -25,16 +26,16 @@ const Navbar = (props) => {
     <div className="navbar">
       <ul className="navbarMenu">
         <li>
-          <a href="#">HOME</a>
+          <NavLink to="/">HOME</NavLink>
         </li>
         <li>
-          <a href="#">ABOUT US</a>
+          <NavLink to="/about-us">ABOUT US</NavLink>
         </li>
         <li>
-          <a href="#">POSTS</a>
+          <NavLink to="/post">POSTS</NavLink>
         </li>
         <li>
-          <a href="#">CONTACT</a>
+          <NavLink to="/contact-us">CONTACT</NavLink>
         </li>
       </ul>
       <div className="search">
