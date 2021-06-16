@@ -8,7 +8,7 @@ import "./style.css";
 const Logo = (props) => {
   return (
     <div className="logo">
-      <a href="#">Priya Macpherson</a>
+      <a href="#">Training With Toby</a>
     </div>
   );
 };

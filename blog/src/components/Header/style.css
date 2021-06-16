@@ -2,13 +2,17 @@
   display: flex;
   justify-content: space-between;
   margin: 10px 0;
+  padding: 5px;
+  font-family: "Poppins", sans-serif;
+  background-color: #00263e;
+  color: #fff;
 }
 
 .headerMenu a {
   display: inline-block;
   margin: 0 10px;
   text-decoration: none;
-  color: #565673;
+  color: #fff;
   font-size: 12px;
   letter-spacing: 1.2px;
 }

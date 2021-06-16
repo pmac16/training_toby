@@ -3,11 +3,7 @@ import Header from "../../components/Header";
 import "./style.css";
 
 const Home = (props) => {
-  return (
-    <div>
-      <Header />
-    </div>
-  );
+  return <div>Home</div>;
 };
 
 export default Home;

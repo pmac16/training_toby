@@ -1,5 +1,6 @@
 import React from "react";
 import "./style.css";
+import Paw from "../../assets/icons/paw1.png";
 /**
  * @author
  * @function Header
@@ -8,12 +9,15 @@ import "./style.css";
 const Header = (props) => {
   return (
     <header className="header">
+      <div>
+        <img src={Paw}></img>
+      </div>
       <nav className="headerMenu">
-        <a href="#">Home</a>
-        <a href="#">About Us</a>
-        <a href="#">Contact Us</a>
+        <a href="#">HOME</a>
+        <a href="#">ABOUT US</a>
+        <a href="#">CONTACT</a>
+        <a href="#">TOOLS</a>
       </nav>
-      <div>social media links</div>
     </header>
   );
 };

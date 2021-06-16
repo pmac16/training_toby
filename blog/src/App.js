@@ -3,14 +3,19 @@ import "./App.css";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Home from "./containers/Home";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import ContactUs from "./containers/ContactUs";
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Hero />
-      <Home />
-    </div>
+    <Router>
+      <div className="App">
+        <Header />
+        <Hero />
+        <Route path="/" component={Home} />
+        <Route path="/contact-us" component={ContactUs} />
+      </div>
+    </Router>
   );
 }
 

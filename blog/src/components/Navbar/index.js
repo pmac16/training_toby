@@ -1,31 +1,52 @@
-import React from "react";
-import Hero from "../Hero";
+import React, { useState } from "react";
 import "./style.css";
+import Search from "../../assets/icons/search.png";
+
 /**
  * @author
  * @function Navbar
  **/
 
 const Navbar = (props) => {
+  const [search, setSearch] = useState(false);
+
+  const submitSearch = (e) => {
+    e.preventDefault();
+    alert("Searched");
+  };
+
+  const openSearch = () => {
+    setSearch(true);
+  };
+
+  const searchClass = search ? "searchInput active" : "searchInput";
+
   return (
     <div className="navbar">
       <ul className="navbarMenu">
         <li>
-          <a href="#">Home</a>
+          <a href="#">HOME</a>
         </li>
         <li>
-          <a href="#">About Us</a>
+          <a href="#">ABOUT US</a>
         </li>
         <li>
-          <a href="#">Posts</a>
+          <a href="#">POSTS</a>
         </li>
         <li>
-          <a href="#">Contact Us</a>
+          <a href="#">CONTACT</a>
         </li>
       </ul>
       <div className="search">
-        <input type="text" placeholder="Search" />
-        <img src="../../assets/icons/search.png" alt="Search" />
+        <form onSubmit={submitSearch}>
+          <input type="text" className={searchClass} placeholder="Search" />
+          <img
+            className="searchIcon"
+            onClick={openSearch}
+            src={Search}
+            alt="Search"
+          />
+        </form>
       </div>
     </div>
   );
