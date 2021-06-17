@@ -3,6 +3,7 @@
   justify-content: space-between;
   padding: 10px 0;
   font-family: "Poppins", sans-serif;
+  color: white;
 }
 
 .navbar ul {
@@ -18,11 +19,16 @@
 .navbar ul li a {
   text-decoration: none;
   display: block;
-  font-size: 20px;
+  font-size: 12px;
+
   text-transform: capitalize;
   font-weight: 400;
-  color: #00263e;
+  color: white;
   padding: 0 10px;
+}
+
+.navbar ul li a:hover {
+  color: #f2a900;
 }
 
 .search form {
@@ -34,6 +40,7 @@
   border: 0;
   width: 0;
   transition: width 0.1s ease-in;
+  font-family: "Poppins", sans-serif;
 }
 
 .searchInput.active {
@@ -42,6 +49,7 @@
 
 .searchIcon {
   cursor: pointer;
+  color: white;
 }
 
 .searchinput:focus {

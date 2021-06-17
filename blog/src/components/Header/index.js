@@ -1,6 +1,7 @@
 import React from "react";
 import "./style.css";
 import Paw from "../../assets/icons/paw1.png";
+import Navbar from "../Navbar";
 /**
  * @author
  * @function Header
@@ -12,11 +13,8 @@ const Header = (props) => {
       <div>
         <img src={Paw}></img>
       </div>
-      <nav className="headerMenu">
-        <a href="#">HOME</a>
-        <a href="#">ABOUT US</a>
-        <a href="#">CONTACT</a>
-        <a href="#">TOOLS</a>
+      <nav>
+        <Navbar />
       </nav>
     </header>
   );
