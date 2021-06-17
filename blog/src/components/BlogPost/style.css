@@ -1,4 +1,42 @@
-.blogPost {
+.blogPostContainer {
   width: 70%;
-  background-color: yellow;
+}
+
+.blogHeader {
+  text-align: center;
+}
+
+.postTitle {
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+  font-size: 30px;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  color: #00263e;
+}
+
+.blogCategory {
+  display: block;
+  font-size: 14px;
+  padding: 10px 0;
+  text-transform: uppercase;
+  color: #00263e;
+}
+
+.postedBy {
+  font-family: "Bitter", serif;
+  color: #00263e;
+  font-size: 15px;
+  padding: 10px 0;
+}
+
+.postImageContainer {
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.postImageContainer img {
+  max-width: 100%;
+  max-height: 100%;
 }
